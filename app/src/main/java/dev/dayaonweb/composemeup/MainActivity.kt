@@ -20,6 +20,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
+import dev.dayaonweb.composemeup.ui.screens.Onboarding
 import dev.dayaonweb.composemeup.ui.theme.ComposeMeUpTheme
 
 class MainActivity : ComponentActivity() {
@@ -40,7 +41,7 @@ class MainActivity : ComponentActivity() {
 fun MyApp() {
     var shouldShowHomeScreen by rememberSaveable { mutableStateOf(false) }
     if (shouldShowHomeScreen)
-        HomeScreen()
+        Onboarding()
     else
         LoginScreen {
             shouldShowHomeScreen = true
