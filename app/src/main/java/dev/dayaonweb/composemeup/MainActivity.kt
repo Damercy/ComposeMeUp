@@ -43,7 +43,7 @@ fun MyApp() {
         HomeScreen()
     else
         LoginScreen {
-            shouldShowHomeScreen = false
+            shouldShowHomeScreen = true
         }
 }
 
